@@ -78,5 +78,10 @@ public class WordController {
         Training training = trainingService.getById(trainingId);
         return trainingWordService.addWordToTraining(word, training);
     }
+
+    @GetMapping("/getWordsByTrainingId/{trainingId}")
+    public List<Word> getWordsByTrainingId(@PathVariable Long trainingId) {
+        return trainingWordService.getWordByTrainingIdAndLanguage(trainingId, language);
+    }
 }
 

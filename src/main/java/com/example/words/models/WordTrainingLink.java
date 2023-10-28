@@ -27,7 +27,7 @@ public class WordTrainingLink {
 
     private int repeatDays = -1;
 
-    public WordTrainingLink(Word word, Training trainings) {
+    public WordTrainingLink(Word word, Training training) {
         this.word = word;
         this.training = training;
     }
